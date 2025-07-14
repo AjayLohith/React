@@ -35,7 +35,7 @@ const ArrayUpdation = () => {
         type="text"
         value={inputValue} // The value comes from React state
         onChange={(e) => setInputValue(e.target.value)} // Update state on change
-        placeholder="Enter food.."
+        placeholder="Enter food...."
       />
 
       <button onClick={handleAddFood}>Add Food</button>
