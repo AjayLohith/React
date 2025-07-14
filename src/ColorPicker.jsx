@@ -11,12 +11,13 @@ const ColorPicker = () => {
 
  const displayStyle = {
     backgroundColor: color,
-    color: color.toUpperCase() === '#FFFFFF' ? '#000000' : '#FFFFFF'
+    color: color.toUpperCase() === '#FFFFFF' ? '#000000' : '#ffffffff'
   };
  
   return (
     <div className='color-picker-container'>
         <h1><b>ColorPicker</b></h1>
+        <p></p>
         <div className="color-display" style={displayStyle}>
             <p className='color-value' >Selected Color: {color}</p>
         </div>
