@@ -21,6 +21,9 @@ const UseEffect = () => {
     }
   },[]);
 
+  useEffect(()=>{
+    document.title=`Size:${width}*${height}`
+  },[width,height]);
 
 
   return (
