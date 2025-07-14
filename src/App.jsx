@@ -12,6 +12,7 @@ import UpdateObjects from './UpdateObjects'
 import ArrayUpdation from './ArrayUpdation'
 import UpdateArrayOfObj from './UpdateArrayOfObj'
 import ToDo from './ToDo'
+import UseEffect from './UseEffect'
 // import './index.css'
 
 function App() {
@@ -28,7 +29,8 @@ function App() {
       {/* <UpdateObjects/>  */}
       {/* <ArrayUpdation/> */}
       {/* <UpdateArrayOfObj/> */}
-      <ToDo/>
+      {/* <ToDo/> */}
+      <UseEffect/>
       
 
     </>
