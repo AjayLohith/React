@@ -1,0 +1,49 @@
+.card {
+  width: 150px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(150, 147, 147);
+  padding: 20px;
+  margin: 5px;
+  text-align: center;
+  
+}
+.card .resizeImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.card .cardTitle {
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+.card .cardText {
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(115, 117, 116);
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+
+
+
+}
+
+/* Apply styles to the top-level div that wraps all cards */
+body > div {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  gap: 20px;
+
+  /* 🎯 Control spacing from left/right edges of the screen */
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
