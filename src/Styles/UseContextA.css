@@ -1,0 +1,6 @@
+.box {
+    width: 100%;              /* Make it span the full horizontal width */
+    border: 5px solid;
+    padding: 20px;
+    box-sizing: border-box;   /*Ensures padding doesn't exceed width*/
+}

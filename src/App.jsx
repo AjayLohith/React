@@ -13,7 +13,9 @@ import ArrayUpdation from './ArrayUpdation'
 import UpdateArrayOfObj from './UpdateArrayOfObj'
 import ToDo from './ToDo'
 import UseEffect from './UseEffect'
-// import './index.css'
+import DigiClock from './DigiClock'
+import UseContextA from './UseContextA'
+import './index.css'
 
 function App() {
 
@@ -30,8 +32,9 @@ function App() {
       {/* <ArrayUpdation/> */}
       {/* <UpdateArrayOfObj/> */}
       {/* <ToDo/> */}
-      <UseEffect/>
-      
+      {/* <UseEffect/> */}
+      {/* <DigiClock/> */}
+      <UseContextA/>
 
     </>
   )
