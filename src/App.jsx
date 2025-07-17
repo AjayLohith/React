@@ -16,6 +16,7 @@ import UseEffect from './UseEffect'
 import DigiClock from './DigiClock'
 import UseContextA from './UseContextA'
 import './index.css'
+import UseRef from './UseRef'
 
 function App() {
 
@@ -34,7 +35,8 @@ function App() {
       {/* <ToDo/> */}
       {/* <UseEffect/> */}
       {/* <DigiClock/> */}
-      <UseContextA/>
+      {/* <UseContextA/> */}
+      <UseRef/>
 
     </>
   )
