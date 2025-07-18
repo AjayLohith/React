@@ -17,6 +17,7 @@ import DigiClock from './DigiClock'
 import UseContextA from './UseContextA'
 import './index.css'
 import UseRef from './UseRef'
+import StopWatch from './StopWatch'
 
 function App() {
 
@@ -36,7 +37,8 @@ function App() {
       {/* <UseEffect/> */}
       {/* <DigiClock/> */}
       {/* <UseContextA/> */}
-      <UseRef/>
+      {/* <UseRef/> */}
+      <StopWatch/>
 
     </>
   )
