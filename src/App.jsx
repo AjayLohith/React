@@ -30,7 +30,7 @@ function App() {
       {/* <Counter/> */}
       {/* <OnChange/> */}
       {/* <ColorPicker/>  */}
-      {/* <UpdateObjects/>  */}
+      <UpdateObjects/> 
       {/* <ArrayUpdation/> */}
       {/* <UpdateArrayOfObj/> */}
       {/* <ToDo/> */}
@@ -38,7 +38,7 @@ function App() {
       {/* <DigiClock/> */}
       {/* <UseContextA/> */}
       {/* <UseRef/> */}
-      <StopWatch/>
+      {/* <StopWatch/> */}
 
     </>
   )

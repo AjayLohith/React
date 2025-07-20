@@ -1,35 +1,61 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react';
 
 const UpdateObjects = () => {
-    const[car,setCar]=useState({name:"Ferrari",
-                                color:"Red",
-                                year:2025});
+  const [form, setForm] = useState({
+    name: 'Ferrari',
+    color: 'Red',
+    year: 2025
+  });
 
-const handleCar=(e)=>{
-    setCar(prev=>
-        ({...prev,name:e.target.value})
-    );
-};
-const handleColor=(e)=>{
-    setCar(prev=>
-        ({...prev,color:e.target.value})
-    );
-    
-};
-const handleYear=(e)=>{
-    setCar(prev=>
-        ({...prev,year:e.target.value})
-    );
-};
+  // One handler for all input changes
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  // Form submit handler
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevents page refresh
+    console.log('Car submitted:', form);
+    // You can also send `form` to a backend or validate it here
+  };
+
   return (
     <div>
-      <h1>My fav car is: {car.name} {car.color} {car.year}</h1>
+      <h1>My fav car is: {form.name} {form.color} {form.year}</h1>
 
-      <input type='text' value={car.name} onChange={handleCar}></input><br/>
-       <input type='text' value={car.color} onChange={handleColor}></input><br/>
-        <input type='number' value={car.year} onChange={handleYear}></input>
+      <form onSubmit={handleSubmit}>
+        <input 
+          type="text" 
+          name="name" 
+          value={form.name} 
+          onChange={handleChange} 
+          placeholder="Enter car name"
+        /><br />
+
+        <input 
+          type="text" 
+          name="color" 
+          value={form.color} 
+          onChange={handleChange} 
+          placeholder="Enter car color"
+        /><br />
+
+        <input 
+          type="number" 
+          name="year" 
+          value={form.year} 
+          onChange={handleChange} 
+          placeholder="Enter car year"
+        /><br />
+
+        <button type="submit">Submit</button>
+      </form>
     </div>
-  )
-}
+  );
+};
 
-export default UpdateObjects
+export default UpdateObjects;
